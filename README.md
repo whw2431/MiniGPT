@@ -41,12 +41,16 @@ Dependencies:
 ## Instructions to run the code
 You can run the notebook step by step. At the data tokenization part, you can choose one of the methods( our results is based on BPE without regularization).
 
-## Results and performance metrics
+## Performance metrics and Results 
 <img src="image/loss.png" width="600">
 
-We can observe that both the training and validation losses decrease steadily with an increasing number of iterations, eventually converging to a low and comparable value. This indicates that the model has learned the data well and performs consistently on both seen (training) and unseen (validation) data. Furthermore, the lack of a significant gap between the two curves suggests that the model is not overfitting. Finally, we evaluate the model on the test dataset using CV Loss, BPC/BPW (Bits Per Character/Word), and Perplexity as metrics. We achieved an Average Loss of 2.1481, a BPC/BPW of 3.0990, and a Perplexity of 8.5682 on the test set. 
+We can observe that both the training and validation losses decrease steadily with an increasing number of iterations, eventually converging to a low and comparable value. This indicates that the model has learned the data well and performs consistently on both seen (training) and unseen (validation) data. Furthermore, the lack of a significant gap between the two curves suggests that the model is not overfitting. Finally, we evaluate the model on the test dataset using CV Loss, BPC/BPW (Bits Per Character/Word), and Perplexity as metrics, the model attained notable results: an Average Loss of 2.1481, BPC/BPW at 3.0990, and Perplexity standing at 8.5682.
+
+<img src="image/text_generation.png" width="600">
+Here is an text gerneration example by using our pre-trained model with the best hyperparameters.
 
 ## Observations and findings
+
 
 
 ## Reflection
