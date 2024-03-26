@@ -9,7 +9,7 @@ This project explores the implementation of a mini-GPT model, a simplified versi
 
 ## Table of Contents
 
-- [Environment setup](#environmentsetup)
+- [Environment setup](#environment_setup)
 - [Dependency installation](#install)
 - [Instructions to run the code](#instructions)
 - [Results and performance metrics](#results)
