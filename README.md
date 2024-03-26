@@ -46,8 +46,24 @@ You can run the notebook step by step. At the data tokenization part, you can ch
 
 We can observe that both the training and validation losses decrease steadily with an increasing number of iterations, eventually converging to a low and comparable value. This indicates that the model has learned the data well and performs consistently on both seen (training) and unseen (validation) data. Furthermore, the lack of a significant gap between the two curves suggests that the model is not overfitting. Finally, we evaluate the model on the test dataset using CV Loss, BPC/BPW (Bits Per Character/Word), and Perplexity as metrics, the model attained notable results: an Average Loss of 2.1481, BPC/BPW at 3.0990, and Perplexity standing at 8.5682.
 
-<img src="image/text_generation.png" width="600">
 Here is a text gerneration example by using our pre-trained model with the best hyperparameters.
+
+```
+ESCALUDIO:
+Fell, my lord, shall be at his friends.
+
+NORTHUMBERLAND:
+A kingdom, and you further who is purdcoated now else.
+And here be found. Prithee, came and no mortal cuqual feetch!
+Not weeping tears both give heard, or either disors
+many words: addesperated these weaks tears,
+Takest birds for her cause hath sbecomed;
+That now arise mars: most rebed my noble hath best,
+With honour sins. Wantons on a littled grave:
+The plain earnest all by faul brain thy tlews:
+No, she signs to remembers from brother fromows?
+```
+
 
 ## Observations and findings
 
