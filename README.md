@@ -39,7 +39,7 @@ Dependencies:
 
 
 ## Instructions to run the code
-You can run the notebook step by step. At the data tokenization part, you can choose one of three methods (Our results is based on BPE without regularization).
+You can run the notebook step by step. At the data tokenization part, you can choose one of three methods (Our results are based on BPE without regularization).
 
 ## Performance metrics and Results 
 <img src="image/loss.png" width="600">
