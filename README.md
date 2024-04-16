@@ -34,12 +34,14 @@ Dependencies:
 - [random](https://docs.python.org/3/library/random.html) for tuning hyperparametrs
 - [matplotlib](https://matplotlib.org/)
 - [math](https://docs.python.org/3/library/math.html)
+- [pickle](https://docs.python.org/3/library/pickle.html)
+- [datasets](https://huggingface.co/docs/datasets/index)
 - `regex`for data tokenization with regularization
 
 
 
 ## Instructions to run the code
-You can run the notebook step by step. At the data tokenization part, you can choose one of three methods (Our results are based on BPE without regularization).
+
 
 ## Performance metrics and Results 
 <img src="image/loss.png" width="600">
@@ -49,19 +51,46 @@ We can observe that both the training and validation losses decrease steadily wi
 Here is a text gerneration example by using our pre-trained model with the best hyperparameters.
 
 ```
-ESCALUDIO:
-Fell, my lord, shall be at his friends.
+Tews for, fair my brother
+Than when that name, were grave to do't: I
+your ne to see my soul, and consulsperia! Worit is it is ask,
+Were Romeo, vow'd by my shgoching hurchowers which
+The veralse father's death. Our near of my loves,
+To soldiers are the great. Peacement that same unnaturaled
+That you: price
+In what of heart by like to keepward in too fom?
+
+FLORIZEL:
+For that I know not in.
 
 NORTHUMBERLAND:
-A kingdom, and you further who is purdcoated now else.
-And here be found. Prithee, came and no mortal cuqual feetch!
-Not weeping tears both give heard, or either disors
-many words: addesperated these weaks tears,
-Takest birds for her cause hath sbecomed;
-That now arise mars: most rebed my noble hath best,
-With honour sins. Wantons on a littled grave:
-The plain earnest all by faul brain thy tlews:
-No, she signs to remembers from brother fromows?
+So shall your who, go withal counts! Marcius lie thou?
+
+ANGELO:
+He turned us debsea good way ind,
+Sir I cuest
+With safe-houseing controad inughter'd but as you are:
+Betitted my ragona: do hest of dear pravel,
+That you loved
+Believe this the sincement to speak.
+
+Say you my toward a  sweary'd?
+And, if thou beforgment to me our king to the court-growed
+I was instruI do projest to back
+And buried my  shapric affairlys of life,
+Spurchairects, and a year, who demand woul prince!
+Desolknight-offes-bnothing of death!
+Give me the bodeed between prince:
+These three expatitable prisonments of Gaunt and my George and
+In more s: O, triumph in the sun general
+To sit instruction: but my heart they has vance
+That little gled thrive to your most and
+graceces shall served against on my man--shall know'
+my soul's alive: and in our chasteal;'s;
+Do, under with this drumthe lifction's hand of thee,
+I would some conduits in his father;
+And temperous we them to the fire of her blood of it them.
+Though?
 ```
 
 
