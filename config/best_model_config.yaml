@@ -1,0 +1,8 @@
+batch_size: 16
+block_size: 32
+dropout: 0.1
+learning_rate: 0.0001
+n_embd: 488
+n_head: 8
+n_layer: 10
+vocab_size: 3257
