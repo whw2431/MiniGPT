@@ -44,55 +44,18 @@ Dependencies:
 
 
 ## Performance metrics and Results 
-<img src="image/loss.png" width="600">
+### Cross-Validation Loss
+The formula is as follows:
 
-We can observe that both the training and validation losses decrease steadily with an increasing number of iterations, eventually converging to a low and comparable value. This indicates that the model has learned the data well and performs consistently on both seen (training) and unseen (validation) data. Furthermore, the lack of a significant gap between the two curves suggests that the model is not overfitting. Finally, we evaluate the model on the test dataset using CV Loss, BPC/BPW (Bits Per Character/Word), and Perplexity as metrics, the model attained notable results: an Average Loss of 2.1481, BPC/BPW at 3.0990, and Perplexity standing at 8.5682.
+The Cross-Validation Loss is calculated as follows:
 
-Here is a text gerneration example by using our pre-trained model with the best hyperparameters.
+\[ \text{Cross-Validation Loss} = -\sum_{i=1}^{C} y_{i} \log(\hat{y}_{i}) \]
 
-```
-Tews for, fair my brother
-Than when that name, were grave to do't: I
-your ne to see my soul, and consulsperia! Worit is it is ask,
-Were Romeo, vow'd by my shgoching hurchowers which
-The veralse father's death. Our near of my loves,
-To soldiers are the great. Peacement that same unnaturaled
-That you: price
-In what of heart by like to keepward in too fom?
+where \(C\) is the token vocabulary size, \(y_{i}\) is the actual probability of the \(i\)-th token, and \(\hat{y}_{i}\) is the predicted probability of the \(i\)-th token.
 
-FLORIZEL:
-For that I know not in.
 
-NORTHUMBERLAND:
-So shall your who, go withal counts! Marcius lie thou?
-
-ANGELO:
-He turned us debsea good way ind,
-Sir I cuest
-With safe-houseing controad inughter'd but as you are:
-Betitted my ragona: do hest of dear pravel,
-That you loved
-Believe this the sincement to speak.
-
-Say you my toward a  sweary'd?
-And, if thou beforgment to me our king to the court-growed
-I was instruI do projest to back
-And buried my  shapric affairlys of life,
-Spurchairects, and a year, who demand woul prince!
-Desolknight-offes-bnothing of death!
-Give me the bodeed between prince:
-These three expatitable prisonments of Gaunt and my George and
-In more s: O, triumph in the sun general
-To sit instruction: but my heart they has vance
-That little gled thrive to your most and
-graceces shall served against on my man--shall know'
-my soul's alive: and in our chasteal;'s;
-Do, under with this drumthe lifction's hand of thee,
-I would some conduits in his father;
-And temperous we them to the fire of her blood of it them.
-Though?
-```
-
+In the following is the generated text with the best hyperparameters
+<img src="image/generated_text.png" width="600">
 
 ## Observations and findings
 ### In hyperpameters tuning
