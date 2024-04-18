@@ -76,6 +76,14 @@ In the following is the generated text with the best hyperparameters
 <img src="image/loss_plot_best.png" width="600">
 
 ## Observations and findings
+- **Vocabulary Size Limitations**: Due to hardware constraints, we set the vocabulary size to only 3,257, which is significantly smaller than GPT-2's 50,257. This limitation may reduce our model's accuracy in semantic understanding and the quality of text generation, especially for complex or linguistically rich content.
+- **Number of Iterations**: We capped the number of iterations at 5,000 due to hardware limitations. This restriction suggested the model was undertrained as both training and validation losses continued to decrease at this threshold, indicating potential missed optimal parameters.
+- **Learning Rate Warm-up**: We found that starting with a very low learning rate and gradually increasing it helped stabilize the training. This approach improved the model's performance compared to using a fixed rate, which led to instability or slow convergence.
+- **Text Evaluation Metrics**: We relied on validation loss and subjective human evaluation for assessing text quality because implementing BLEU scores proved challenging. The dependency of BLEU scores on the quality and comprehensiveness of reference texts was a limiting factor.
+- **Early Stopping**: We employed early stopping to prevent overfitting, but this technique sometimes halted the training too soon, as evidenced by poorer performance of text generated under early stopping conditions compared to slightly overfit models.
+- **Comparison with Other Algorithms**: We highlighted the advantages of the Transformer architecture used in GPT-2 over traditional algorithms like RNNs and LSTMs, particularly in handling long-distance dependencies and training efficiency through parallel processing.
+- **Ethics and Privacy**: We addressed potential misuse of the model for creating false information, copyright infringement risks, and socio-cultural biases in the training data. To mitigate these risks, we took measures to ensure data diversity and removed sensitive content from our datasets.
+
 ### In hyperparameters tuning
 
 ### In fine-tuning based on Transfer Learning
