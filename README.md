@@ -53,6 +53,12 @@ Dependencies:
 
 ## Performance metrics and Results 
 ### Comparison within different tokenization methods
+Naive Tokenization:
+<img src="image/token1.png" width="600">
+BPE:
+<img src="image/token2.png" width="600">
+BPE with Regularization:
+<img src="image/token3.png" width="600">
 
 ### Hyperparameters tuning
 We use cross-validation loss and human evaluation scores to evaluate our model.
