@@ -31,7 +31,6 @@ Dependencies:
 
 - [pytorch](https://pytorch.org) 
 - [numpy](https://numpy.org/install/)
-- [random](https://docs.python.org/3/library/random.html) for tuning hyperparametrs
 - [matplotlib](https://matplotlib.org/)
 - [math](https://docs.python.org/3/library/math.html)
 - [pickle](https://docs.python.org/3/library/pickle.html)
@@ -42,6 +41,12 @@ Dependencies:
 
 ## Instructions to run the code
 
+- [`./utils_gpt.ipynb`](/utils_gpt.ipynb) - All the class and functions we constracted.
+- [`./explore_data.ipynb`](/explore_data.ipynb) - Exploring the Shakespeare data set.
+- [`./Compare_tokenizations.ipynb](/Compare_tokenizations.ipynb)- Comparison of three tokenization methods 
+- [`./minigpt/sidecar.py`](/minigpt/sidecar.py) - Training utilities such as
+  W&B logging, auto-saving etc.
+- [`./scripts/*.py`](/scripts/) - Scripts exposing CLIs to interact with MiniGPT.
 
 ## Performance metrics and Results 
 ### Cross-Validation Loss
