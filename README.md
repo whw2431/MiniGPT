@@ -4,7 +4,6 @@
 This project explores the implementation of a mini-GPT model, a simplified version of the powerful GPT-2 architecture.  It demonstrates the implementation of a generative pre-trained transformer model capable of text generation at a character level.  We use character-based Shakespeare dataset to generate a Shakespeare's-like text. This project covers aspects from data preparation, tokenization, model building, training, to generating new text based on trained models.
 
 
-<img src="image/text_generation_shakespeare_rnn.jpg" width="400">
 
 
 ## Table of Contents
