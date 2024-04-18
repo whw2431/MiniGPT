@@ -54,20 +54,8 @@ You can run the code separately depending on what you want, the contents of our 
 
 
 ## Performance metrics and Results 
-### Comparison within different tokenization methods
-Naive Tokenization:
 
-<img src="image/token1.png" width="600">
-BPE:
-
-<img src="image/token2.png" width="600">
-BPE with Regularization:
-
-<img src="image/token3.png" width="600">
-
-### Hyperparameters tuning
 We use cross-validation loss and human evaluation scores to evaluate our model.
-
 After tuning hyperparameters, we obtained the best hyperparameters as follows:
 | embeddings | layers | heads | batch size | block size | learning rate | drop out |
 |------------|--------|-------|------------|------------|---------------|----------|
@@ -83,18 +71,4 @@ In the following is the generated text with the best hyperparameters
 - **Learning Rate Warm-up**: We found that starting with a very low learning rate and gradually increasing it helped stabilize the training. This approach improved the model's performance compared to using a fixed rate, which led to instability or slow convergence.
 - **Text Evaluation Metrics**: We relied on validation loss and subjective human evaluation for assessing text quality because implementing BLEU scores proved challenging. The dependency of BLEU scores on the quality and comprehensiveness of reference texts was a limiting factor.
 - **Early Stopping**: We employed early stopping to prevent overfitting, but this technique sometimes halted the training too soon, as evidenced by poorer performance of text generated under early stopping conditions compared to slightly overfit models.
-- **Comparison with Other Algorithms**: We highlighted the advantages of the Transformer architecture used in GPT-2 over traditional algorithms like RNNs and LSTMs, particularly in handling long-distance dependencies and training efficiency through parallel processing.
-- **Ethics and Privacy**: We addressed potential misuse of the model for creating false information, copyright infringement risks, and socio-cultural biases in the training data. To mitigate these risks, we took measures to ensure data diversity and removed sensitive content from our datasets.
 
-### In hyperparameters tuning
-
-### In fine-tuning based on Transfer Learning
-Pretraining on a large dataset and fine-tuning on a small dataset seems to yield better results than pretraining on a small dataset and fine-tuning on a large one. A larger amount of data during pretraining enhances the model's generalization ability, which better facilitates the transfer to fine-tuning on a smaller dataset. However, due to significant differences in the distribution between the two datasets, freezing only the last linear layer does not yield good results. Fine-tuning only one layer of parameters is insufficient.
-
-Although the performance of our fine-tuning based on the pre-trained model is not as ideal as we hoped, considering the long training time when training models, we can use fine-tuning when we want to accomplish a new task without wasting more time training an entire model from scratch. Fine-tuning allows the model to adapt to new tasks while retaining useful knowledge already learned, which is often much more efficient than training a completely new model from scratch.
-
-## Reflection
-### Running time issue:
-Small vocabulary size of BPE
-limit number of iterations
-### Choosing Evaluation Metrics 
