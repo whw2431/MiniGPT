@@ -65,7 +65,7 @@ In the following is the generated text with the best hyperparameters
 <img src="image/generated_text.png" width="600">
 <img src="image/loss_plot_best.png" width="600">
 
-## Observations and findings
+## Discussion
 - **Vocabulary Size Limitations**: Due to hardware constraints, we set the vocabulary size to only 3,257, which is significantly smaller than GPT-2's 50,257. This limitation may reduce our model's accuracy in semantic understanding and the quality of text generation, especially for complex or linguistically rich content.
 - **Number of Iterations**: We capped the number of iterations at 5,000 due to hardware limitations. This restriction suggested the model was undertrained as both training and validation losses continued to decrease at this threshold, indicating potential missed optimal parameters.
 - **Learning Rate Warm-up**: We found that starting with a very low learning rate and gradually increasing it helped stabilize the training. This approach improved the model's performance compared to using a fixed rate, which led to instability or slow convergence.
