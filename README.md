@@ -23,7 +23,7 @@ To run this project, ensure you have Python 3.x installed.
 ## Dependency installation
 
 ```
-pip install torch numpy random matplotlib math regex
+pip install torch numpy  matplotlib math regex pickle datasets time
 ```
 
 Dependencies:
@@ -34,11 +34,13 @@ Dependencies:
 - [math](https://docs.python.org/3/library/math.html)
 - [pickle](https://docs.python.org/3/library/pickle.html)
 - [datasets](https://huggingface.co/docs/datasets/index)
+- [time](https://docs.python.org/3/library/time.html)
 - `regex`for data tokenization with regularization
 
 
 
 ## Instructions to run the code
+You can run the code separately depending on what you want, the contents of our code are following:
 
 - [`./utils_gpt.ipynb`](/utils_gpt.ipynb) - All the class and functions we constracted.
 - [`./explore_data.ipynb`](/explore_data.ipynb) - Exploring the Shakespeare data set.
