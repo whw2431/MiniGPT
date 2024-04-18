@@ -73,8 +73,8 @@ After tuning hyperparameters, we obtained the best hyperparameters as follows:
 
 In the following is the generated text with the best hyperparameters
 <img src="image/generated_text.png" width="600">
+<img src="image/loss.png" width="600">
 
-<img src="image/generated_text.png" width="600">
 ## Observations and findings
 ### In hyperparameters tuning
 
