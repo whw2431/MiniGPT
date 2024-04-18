@@ -43,10 +43,14 @@ Dependencies:
 
 - [`./utils_gpt.ipynb`](/utils_gpt.ipynb) - All the class and functions we constracted.
 - [`./explore_data.ipynb`](/explore_data.ipynb) - Exploring the Shakespeare data set.
-- [`./Compare_tokenizations.ipynb](/Compare_tokenizations.ipynb)- Comparison of three tokenization methods 
-- [`./minigpt/sidecar.py`](/minigpt/sidecar.py) - Training utilities such as
-  W&B logging, auto-saving etc.
-- [`./scripts/*.py`](/scripts/) - Scripts exposing CLIs to interact with MiniGPT.
+- [`./Compare_tokenizations.ipynb](/Compare_tokenizations.ipynb)- Comparison of three tokenization methods.
+- [`./vocabulary](/vocabulary) - The vocabulary we saved.
+- [`./mini_gpt_training.ipynb](/mini_gpt_training.ipynb) -Tuning hyperparameters
+- [`./Best_model.ipynb](/Best_model.ipynb) - The best model
+- [`./minigpt_fine_tuning.ipynb](/minigpt_fine_tuning.ipynb) - Fine-tuning
+  
+
+
 
 ## Performance metrics and Results 
 ### Cross-Validation Loss
