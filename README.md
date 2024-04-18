@@ -52,21 +52,21 @@ Dependencies:
 
 
 ## Performance metrics and Results 
-### Cross-Validation Loss
-The formula is as follows:
+### Comparison within different tokenization methods
 
-The Cross-Validation Loss is calculated as follows:
+### Hyperparameters tuning
+We use cross-validation loss and human evaluation scores to evaluate our model.
 
-\[ \text{Cross-Validation Loss} = -\sum_{i=1}^{C} y_{i} \log(\hat{y}_{i}) \]
-
-where \(C\) is the token vocabulary size, \(y_{i}\) is the actual probability of the \(i\)-th token, and \(\hat{y}_{i}\) is the predicted probability of the \(i\)-th token.
-
+After tuning hyperparameters, we obtained the best hyperparameters as follows:
+| embeddings | layers | heads | batch size | block size | learning rate | drop out |
+|------------|--------|-------|------------|------------|---------------|----------|
+| 488        | 10     | 8     | 16         | 32         | 0.0001        | 0.1      |
 
 In the following is the generated text with the best hyperparameters
 <img src="image/generated_text.png" width="600">
 
 ## Observations and findings
-### In hyperpameters tuning
+### In hyperparameters tuning
 
 ### In fine-tuning based on Transfer Learning
 Pretraining on a large dataset and fine-tuning on a small dataset seems to yield better results than pretraining on a small dataset and fine-tuning on a large one. A larger amount of data during pretraining enhances the model's generalization ability, which better facilitates the transfer to fine-tuning on a smaller dataset. However, due to significant differences in the distribution between the two datasets, freezing only the last linear layer does not yield good results. Fine-tuning only one layer of parameters is insufficient.
